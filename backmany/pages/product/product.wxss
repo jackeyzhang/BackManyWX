@@ -1,0 +1,80 @@
+.product {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.productname {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.productimg {
+  width: 350rpx;
+  border-radius: 5px;
+}
+
+.attributelabel {
+  width: 750rpx;
+  height: 40px;
+  line-height: 40px;
+  background: red;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid darkred;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.attributesclass {
+  width: 240rpx;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 1px solid red;
+  text-align: center;
+  font-size: 12px;
+}
+
+.attributesselectclass {
+  width: 240rpx;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 1px solid red;
+  text-align: center;
+  font-size: 12px;
+  background-color: yellow;
+}
+
+.commentsinput {
+  width: 750rpx;
+  font-size: 12px;
+  border: 1px solid lightgray;
+  text-align: left;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  height: 2em;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.comments {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}

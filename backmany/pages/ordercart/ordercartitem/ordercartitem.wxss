@@ -1,0 +1,127 @@
+.ordercartitemview {
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid lightgray;
+}
+
+.ordercartcolumnbutton {
+  width: 550rpx;
+  font-size: 14px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+}
+
+.ordercartcolumn {
+  width: 550rpx;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.ordercartcolumncomment {
+  width: 550rpx;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+.prdname {
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.prdattrs {
+  font-size: 15px;
+  color: lightgray;
+}
+
+.productimg {
+  width: 200rpx;
+  height: 290rpx;
+}
+
+.productdesc {
+  width: 550rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.count {
+  width: 150rpx;
+  line-height: 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.other-button-hover {
+  background-color: blue;
+}
+
+.price {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.priceaccount {
+  color: lightgray;
+  padding-left: 5px;
+  width: 70px;
+  vertical-align: top;
+  line-height: 30px;
+}
+
+.discountlabel {
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  text-align: right;
+}
+
+.orderitempricelabel {
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 20px;
+  width: 80px;
+  text-align: right;
+}
+
+.discountinput {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 150rpx;
+  text-align: center;
+}
+
+.commentsinput {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 400rpx;
+  text-align: left;
+  height: 2.5em;
+}
+
+.commentslabel {
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  text-align: right;
+}
+
+.additionfeeinput {
+  width: 70px;
+  color: orangered;
+  line-height: 30px;
+  height: 30px;
+}

@@ -1,0 +1,207 @@
+@import "ordercartitem/ordercartitem.wxss";
+
+.ordercartcolumn-product {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  color: lightcoral;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.ordercartlabel {
+  font-size: 18px;
+  color: lightcoral;
+  font-weight: bold;
+}
+
+.ordercartbutton {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.emptyordercart {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 2px;
+}
+
+.emptyimgview {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.totaldiscountview {
+  width: 750rpx;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  border-top: 1px solid lightgray;
+}
+
+.totaltopayview {
+  width: 750rpx;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.totalcommentview {
+  width: 750rpx;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.totaldiscountlabel {
+  width: 250rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  line-height: 30px;
+}
+
+.totalorderview {
+  width: 250rpx;
+  text-align: left;
+}
+
+.totalpriceaccount {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.totaltopaylabel {
+  width: 250rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+  padding-left: 10rpx;
+  line-height: 30px;
+}
+
+.totalcommentslabel {
+  font-size: 14px;
+  font-weight: bold;
+  width: 150rpx;
+  text-align: left;
+}
+
+.discountinput {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 100rpx;
+  text-align: center;
+}
+
+.topayinput {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 150rpx;
+  text-align: center;
+}
+
+.priceview {
+  background-color: lavenderblush;
+  padding-bottom: 20px;
+}
+
+.totalcommentinput {
+  width: 600rpx;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: left;
+  height: 3em;
+}
+
+.customerview {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  background: lightgoldenrodyellow;
+}
+
+.customerinfoview {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contractinfoview {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.checkoutlabel {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 15px;
+  /*padding-left: 400rpx;*/
+}
+
+.paymentview {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.checkoutnow {
+  padding-top: 10px;
+}
+
+.customerinfo {
+  display: flex;
+  flex-direction: row;
+  line-height: 29px;
+}
+
+.customerinfo picker {
+  width: 500rpx;
+}
+
+.deliverydateview {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+.totalpaidview {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+}
+
+.paymentinfoview {
+  width: 750rpx;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.paidinput {
+  border: 1px solid green;
+  border-radius: 5px;
+  width: 6em;
+  text-align: center;
+}

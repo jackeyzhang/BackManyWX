@@ -1,0 +1,20 @@
+/* addcustomer.wxss */
+
+.addcustomerpage {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+  padding-left: 300rpx;
+}
+
+.customername, .companyname, .mailaddress, .phone, .submitbutton {
+  font-size: 14px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 10px;
+}

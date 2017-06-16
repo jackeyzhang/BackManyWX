@@ -1,0 +1,42 @@
+.productcontainer {
+  width: 650rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 25rpx 40rpx 0rpx 40rpx;
+  padding: 5px;
+  border-bottom: 2px solid #405f80;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.productimg {
+  width: 150rpx;
+  height: 212rpx;
+  max-height: 1500rpx;
+}
+
+.productname {
+  font-size: 12px;
+  padding: 15px;
+  width: 320rpx;
+}
+
+.productop {
+  width: 500rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.prdnameandcategory{
+    display: flex;
+    flex-direction: row;
+}
+
+.category{
+   font-size: 12px;
+   background-color: red;
+   height: 16px;
+   border-radius: 2px;
+}

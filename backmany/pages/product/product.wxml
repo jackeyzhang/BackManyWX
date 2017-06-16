@@ -1,0 +1,21 @@
+<view class="product">
+  <view class="productname">
+    <text>{{data.name}}</text>
+  </view>
+  <view class="productimgs">
+    <image src="https://backmany.yeeist.com/biz_img/prd/{{data.id}}/{{data.filename}}" class="productimg"></image>
+  </view>
+</view>
+<view class="attributelabel">材质-大小-颜色</view>
+<view class="attributes">
+  <block wx:for="{{data.prices}}" wx:for-item="item" wx:for-index="idx">
+    <view class="{{idx == index ? 'attributesselectclass' : 'attributesclass'}}" bindtap="choseprice" data-priceindex="{{idx}}">{{item.pricekey}}</view>
+  </block>
+</view>
+<view class="price">价格：{{price.price}}</view>
+<view class="comments">商品备注：
+  <textarea bindinput="bindcomments" value="{{comments}}" class="commentsinput" />
+</view>
+<view class="buttons">
+  <button data-productid="{{data.id}}" data-productname="{{data.name}}" data-filename="{{data.filename}}" type="warn" bindtap="addtoordercart">加入购物车</button>
+</view>

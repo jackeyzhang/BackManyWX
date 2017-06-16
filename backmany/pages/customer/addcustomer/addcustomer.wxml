@@ -1,0 +1,15 @@
+<!--addcustomer.wxml-->
+<view class="addcustomerpage">
+  <view class="title">添加新客户</view>
+
+  <view class="form">
+    <form bindsubmit="customersubmit">
+      <input placeholder="联系人" class="customername" name="customername"/>
+      <input placeholder="公司名称" class="companyname" name="companyname"/>
+      <input placeholder="邮寄地址" class="mailaddress" name="mailaddress"/>
+      <input type="number" placeholder="电话" class="phone" name="phone"/>
+      <button formType="submit" class="submitbutton">提交客户信息</button>
+    </form>
+  </view>
+
+</view>

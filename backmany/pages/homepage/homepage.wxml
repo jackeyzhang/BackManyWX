@@ -1,0 +1,31 @@
+<import src="../product/producttemplate/producttemplate.wxml" />
+<view>
+  <text>
+  </text>
+
+  <!-- 搜索产品输入框 -->
+  <view class="search">
+    <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+    <input type="number" placeholder="输入产品名字" placeholder-class="placeholder" bindblur="searchproductevent" />
+    <image style="width: 80rpx; height: 80rpx;" mode="scaleToFill" src="../../images/icon/scan.png" bindtap="scanproduct"></image>
+  </view>
+  <block wx:for="{{products}}" wx:for-item="item">
+    <view class="producttemplate">
+      <template is="producttemplate" data="{{...item}}" />
+    </view>
+  </block>
+
+  <!-- 产品列表 -->
+
+  <!--<view>
+    <view>
+      <image src="http://siyuel.com:8080/biz_img/prd//246/A3861%20_10_.jpg"></image>
+    </view>
+    <view>
+      <image src="http://siyuel.com:8080/biz_img/prd//246/A3861%20_6_.jpg"></image>
+    </view>
+    <view>
+      <image src="http://siyuel.com:8080/biz_img/prd//246/A3861%20_3_.jpg"></image>
+    </view>
+  </view>-->
+</view>

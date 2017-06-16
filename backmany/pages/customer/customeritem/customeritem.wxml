@@ -1,0 +1,11 @@
+<template name="customeritemtemplate">
+  <view class="customer" bindtap="editcustomer" data-customerid="{{id}}">
+    <view class="customericon">
+      <image style="width:80rpx; height:80rpx;" src="/images/icon/customerheader.png"></image>
+    </view>
+    <view class="customeritem" >
+      <text>客户名称：{{name}}</text>
+      <text>公司名称：{{company}}</text>
+    </view>
+  </view>
+</template>

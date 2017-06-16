@@ -1,0 +1,21 @@
+@import "customeritem/customeritem.wxss";
+
+/* customer.wxss */
+
+.customerheader {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid lightgray;
+  font-size: 14px;
+  background-color: #f2f2f2;
+}
+
+.search-img {
+  margin: auto 0 auto 20rpx;
+}
+
+.customerheader input {
+  height: 100%;
+  width: 500rpx;
+  margin-left: 10px;
+}

@@ -1,0 +1,17 @@
+<!--addcustomer.wxml-->
+<view class="addcustomerpage">
+  <view class="title">编辑该客户</view>
+
+  <view class="form">
+    <form bindsubmit="customersubmit">
+      <input type="number" class="customerid" name="id" value="{{id}}"/>
+      <input placeholder="联系人" class="customername" name="customername" value="{{name}}" disabled="true"/>
+      <input placeholder="公司名称" class="companyname" name="companyname" value="{{company}}"/>
+      <input placeholder="邮寄地址" class="mailaddress" name="mailaddress" value="{{shiptoaddr}}"/>
+      <input type="number" placeholder="电话" class="phone" name="phone" value="{{phone}}"/>
+      <button formType="submit" class="submitbutton">提交修改</button>
+      <button type="warn" class="submitbutton" bindtap="deletecustomer" data-customerid="{{id}}">删除该客户</button>
+    </form>
+  </view>
+
+</view>

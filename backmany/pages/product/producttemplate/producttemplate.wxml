@@ -1,0 +1,12 @@
+<template name="producttemplate">
+  <view class="productcontainer">
+    <image src="https://backmany.yeeist.com/biz_img/prd/{{id}}/{{filename}}" class="productimg" catchtap="onProductTap" data-productid="{{id}}"></image>
+    <view class="productop">
+      <view class="prdnameandcategory">
+        <text class="productname" catchtap="onProductTap">{{name}}</text>
+        <text class="category">{{category}}</text>
+      </view>
+      <button type="warn" bindtap="buyprocess" size="mini" data-productid="{{id}}" data-productname="{{name}}">点击购买</button>
+    </view>
+  </view>
+</template>

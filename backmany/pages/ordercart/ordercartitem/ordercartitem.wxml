@@ -1,0 +1,34 @@
+<template name="ordercartitemtemplate">
+  <view class="ordercartitemview">
+    <view class="productimgs">
+      <image src="https://backmany.yeeist.com/biz_img/prd/{{productid}}/{{filename}}" class="productimg"></image>
+    </view>
+
+    <view class="productdesc">
+      <view class="ordercartcolumn-product">
+        <view class="prdname">{{productname}}</view>
+        <view class="prdattrs">{{attributes}}</view>
+      </view>
+
+      <view class="ordercartcolumnbutton">
+        <button size="mini" plain="true" type="warn" bindtap="minus" data-key="oi-{{productid}}-{{priceid}}" hover-class="other-button-hover">-</button>
+        <button size="mini" plain="true" type="default" hover-class="other-button-hover">{{count}}</button>
+        <button size="mini" plain="true" type="warn" bindtap="add" data-key="oi-{{productid}}-{{priceid}}" hover-class="other-button-hover">+</button>
+        <label class="priceaccount">￥{{price}}</label>
+        <input type="number" bindblur="bindadditionfee" placeholder="定制费" value="{{afee}}" class="additionfeeinput" data-key="oi-{{productid}}-{{priceid}}"/>
+      </view>
+
+      <view class="ordercartcolumn">        
+        <view class="discountlabel">单项折扣:</view>
+        <input type="number" bindinput="binddiscount" value="{{discount}}" class="discountinput" data-key="oi-{{productid}}-{{priceid}}" />
+        <view class="orderitempricelabel">小计:{{totalprice}}元</view>
+      </view>
+
+      <view class="ordercartcolumncomment">
+        <view class="commentslabel">商品备注:</view>
+        <textarea bindinput="bindcomments" value="{{comments}}" class="commentsinput" data-key="oi-{{productid}}-{{priceid}}" />
+      </view>
+    </view>
+
+  </view>
+</template>

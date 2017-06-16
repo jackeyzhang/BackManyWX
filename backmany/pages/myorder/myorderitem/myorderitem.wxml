@@ -1,0 +1,14 @@
+<template name="myorderitemtemplate">
+  <view class="myorderitem">
+    <text class="orderno">订单号:{{orderno}}</text>
+    <text class="company">客户信息:{{company}}</text>
+    <text class="prdnum">订购数量:{{num}}</text>
+    <text wx:if="{{status==1}}" class="orderstatus">订单状态:已下订单</text>
+    <text wx:elif="{{status==2}}" class="orderstatus">订单状态:已付定金</text>
+    <text wx:elif="{{status==3}}" class="orderstatus">订单状态:已付全款</text>
+    <text wx:else class="orderstatus">订单状态:已经取消</text>
+    <text class="orderdate">总价:￥{{price}}</text>
+    <text wx:if="{{status==2}}" class="orderstatus">定金:￥{{paid}}</text>
+    <text class="orderdate">下单时间:{{date}}</text>
+  </view>
+</template>

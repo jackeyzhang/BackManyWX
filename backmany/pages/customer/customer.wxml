@@ -1,0 +1,12 @@
+<import src="customeritem/customeritem.wxml" />
+<!--customer.wxml-->
+<view class="customerheader">
+  <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+  <input type="text" placeholder="输入客户名字" bindblur="searchcustomerevent" />
+  <button type="primary" bindtap="addcustomer" size="mini">添加客户</button>
+</view>
+
+<block wx:for="{{customers}}" wx:for-item="customer">
+  <template is="customeritemtemplate" data="{{...customer}}">
+  </template>
+</block>

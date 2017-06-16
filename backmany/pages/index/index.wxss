@@ -1,0 +1,80 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+
+.user-motto{
+  color: #405f80;
+  font-weight: bold;
+
+}
+
+.homeswiper {
+  width: 750rpx;
+  height: 550rpx;
+}
+
+.swiperitemclass {
+  width: 750rpx;
+  height: 550rpx;
+}
+
+.journey-container {
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.journey {
+  font-size: 22rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #405f80;
+}
+
+.loginbutton {
+  margin-top:20rpx;
+  width: 740rpx;
+  height: 40px;
+  border: 2px solid #405f80;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.loginbuttontext {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #405f80;
+}
+
+.section{
+padding: 10px 0 0 0;
+}
+
+.logininput{
+  height: 80rpx;
+  border: 1px solid #405f80;
+  border-radius: 5px;
+}

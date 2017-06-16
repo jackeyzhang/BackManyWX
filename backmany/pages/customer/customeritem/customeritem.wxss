@@ -1,0 +1,12 @@
+.customer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightgray;
+}
+
+.customeritem {
+  display: flex;
+  flex-direction: column;
+  height: 3em;
+  font-size: 14px;
+}

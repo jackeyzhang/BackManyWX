@@ -1,0 +1,10 @@
+<import src="myorderitem/myorderitem.wxml" />
+<view>
+  <view class="myordertitle">
+    <label>我的订单</label>
+  </view>
+  <block wx:for="{{orders}}" wx:for-item="order">
+    <template is="myorderitemtemplate" data="{{...order}}">
+    </template>
+  </block>
+</view>

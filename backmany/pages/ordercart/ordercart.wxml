@@ -1,0 +1,96 @@
+<import src="ordercartitem/ordercartitem.wxml" />
+<view>
+  <view wx:if="{{orderitems.length > 0}}">
+    <view class="ordercartitemview">
+      <view class="ordercartlabel">购物车</view>
+    </view>
+    <block wx:for="{{orderitems}}" wx:for-item="item">
+      <template is="ordercartitemtemplate" data="{{...item}}">
+      </template>
+    </block>
+
+    <view class="priceview">
+
+      <view class="totaldiscountview">
+        <view class="totalorderview">
+          <label class="totalpriceaccount">总价: {{totalprice}}</label>
+        </view>
+        <view class="totaldiscountlabel">折扣:
+          <input type="number" bindinput="bindtotaldiscount" value="{{totaldiscount}}" class="discountinput" />
+        </view>
+        <view class="totaltopaylabel">应付:
+          <input type="number" bindinput="bindtotalpricetopay" value="{{totalpricetopay}}" class="topayinput" />
+        </view>
+      </view>
+
+      <view class="totaltopayview">
+        <view class="totalcommentslabel">订单备注:</view>
+        <textarea bindinput="bindtotalcomment" value="{{totalcomments}}" class="totalcommentinput" />
+      </view>
+    </view>
+
+
+    <view class="customerview">
+
+      <view class="checkoutnow">
+        <view class="customerinfo">
+          <picker bindchange="bindCustomerChange" value="{{customerindex}}" range="{{customers}}">
+            <view class="customerinfoview">
+              选择客户信息：{{customers[customerindex]}}
+            </view>
+          </picker>
+          <button size="mini" bindtap="bindAddCustomer">添加新客户</button>
+        </view>
+        <view class="contractinfo">
+          <picker bindchange="bindContractChange" value="{{contractindex}}" range="{{contracts}}">
+            <view class="contractinfoview">
+              选择合同模板：{{contracts[contractindex]}}
+            </view>
+          </picker>
+        </view>
+        <view class="paymentinfo">
+          <label class="checkoutlabel">填写支付信息:</label>
+          <switch checked bindchange="checkoutchange" />
+        </view>
+      </view>
+
+      <view wx:if="{{displaycheckout}}">
+        <view class="paymentview">
+          <label>选择支付方式:</label>
+          <radio-group class="radio-group" bindchange="paymenttypeChange">
+            <label class="radio" wx:for="{{paymenttypes}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+            </label>
+          </radio-group>
+        </view>
+        <view class="paymentinfoview">
+          <view class="totalpaidview">支付金额:
+            <input type="number" bindinput="bindpaid" value="{{paid}}" class="paidinput" />
+          </view>
+          <picker mode="date" value="{{deliverydate}}" start="2015-09-01" end="2027-09-01" bindchange="bindDateChange">
+            <view class="deliverydateview">
+              交货日期: {{deliverydate}}
+            </view>
+          </picker>
+
+        </view>
+      </view>
+      <view wx:else>
+      </view>
+
+    </view>
+
+    <view class="ordercartbutton">
+      <button size="mini" plain="true" type="warn" bindtap="clearordercart">清空购物车</button>
+      <button size="mini" plain="true" type="warn" bindtap="submitordercart">提交订单</button>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="emptyordercart">
+      购物车内暂时没有商品,请前往产品页面选择购买.
+    </view>
+    <view class="emptyimgview">
+      <image style="width: 180rpx; height: 180rpx;" mode="scaleToFill" src="../../images/icon/shopping_cart.png"></image>
+    </view>
+  </view>
+</view>

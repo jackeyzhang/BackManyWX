@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/homepage/homepage",
+    "pages/myorder/myorder",
+    "pages/ordercart/ordercart",
+    "pages/customer/customer",
+    "pages/product/product",
+    "pages/customer/editcustomer/editcustomer",
+    "pages/customer/addcustomer/addcustomer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "Backmany Operation System",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/customer/customer",
+        "text": "客户",
+        "iconPath": "images/tab/customer.png",
+        "selectedIconPath": "images/tab/customer_hl.png"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "产品",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/ordercart/ordercart",
+        "text": "购物车",
+        "iconPath": "images/tab/ordercart.png",
+        "selectedIconPath": "images/tab/ordercart_hl.png"
+      },
+      {
+        "pagePath": "pages/myorder/myorder",
+        "text": "我的订单",
+        "iconPath": "images/tab/ciwei.png",
+        "selectedIconPath": "images/tab/ciwei_hl.png"
+      }
+    ]
+  }
+}

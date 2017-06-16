@@ -1,0 +1,36 @@
+
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 首页跑马灯 -->
+  <view>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" class="homeswiper">
+      <block wx:for="{{swiperimgs}}" wx:for-item="item" wx:for-index="idx">
+        <swiper-item>
+          <image src="{{item}}" background-size="cover" class="swiperitemclass"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!--  首页欢迎文字 -->
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <!--  首页进入按钮 -->
+  <!--<view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>-->
+  <form bindsubmit="loginSubmit">
+    <view class="section">
+      <input name="user" placeholder="请输入用户名" class="logininput" />
+    </view>
+    <view class="section">
+      <input name="password" placeholder="请输入密码" password="{{true}}" class="logininput"/>
+    </view>
+    <view class="btn-area" class="loginbutton">
+      <button formType="submit" class="loginbuttontext">登录</button>
+    </view>
+  </form>
+</view>

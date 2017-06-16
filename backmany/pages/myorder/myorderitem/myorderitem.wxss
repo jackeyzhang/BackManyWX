@@ -1,0 +1,12 @@
+.myorderitem{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderno,.company,.prdnum,.orderstatus,.orderdate{
+  font-size: 12px;
+  font-weight: bold;
+  padding-right:3px;
+}
